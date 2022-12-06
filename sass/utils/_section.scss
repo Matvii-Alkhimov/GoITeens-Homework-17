@@ -1,0 +1,37 @@
+.section{
+    width: 100%;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    @media screen and (min-width: $mobile) {
+        width: 480px;
+        // background-color: tomato;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 768px;
+        // background-color: green;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 1200px;
+        // background-color: yellow;
+    }
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.second-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    width: 370px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
