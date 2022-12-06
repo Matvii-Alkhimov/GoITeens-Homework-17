@@ -1,0 +1,123 @@
+.webstudio {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    & span{
+        color: var(--accent-color);
+}
+
+        &:hover {
+            color:var(--accent-color);
+}
+}
+.white {
+    display: inline-flex;
+    margin-bottom: 20px;
+    color:var(--thirdly-text-color);
+}
+.address {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color:var(--thirdly-text-color);
+}
+.address,
+.contact-item:first-of-type {
+    margin-bottom: 9px;
+}
+
+.footer {
+    width: 1600px;
+    display: flex;
+
+    & h3 {
+        color: var(--thirdly-text-color);
+        margin-bottom: 20px;    
+}
+
+    & .icon-link {
+        color: var(--thirdly-text-color);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    & .icons-list {
+        background-color: var(--background-color);
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+
+    }
+    & .icon-link:hover,
+    & .icon-link:focus {
+        background-color: var(--accent-color);
+    }
+}
+.address-container {
+    width: 231px;
+    height: 132px;
+    margin-left: 215px;
+    margin-right: 70px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.net-container {
+    width: 206px;
+    margin-top: 72px;
+    margin-bottom: 100px;
+    /* outline: 1px white auto; */
+}
+
+.share-container {
+    margin-top: 72px;
+    margin-left: 90px;
+    margin-bottom: 100px;
+    // width: 310px;
+
+    & h3 {
+        width: 270px;
+    }
+
+    & div {
+        display: flex;
+    }
+}
+.share-form input {
+    width: 310px;
+    height: 45px;
+    background-color: var(--background-color);
+    border: 2px rgba(255, 255, 255, 0.1) solid;
+    border-radius: 4px;
+    outline: none;
+}
+.share-button {
+    height: 45px;
+    width: 200px;
+    margin-left: 10px;
+    align-items: center;
+    padding-left: 25px;
+    @extend .hero-button;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        background-image: url(../images_and_icons/icons/tg.svg);
+        width: 24px;
+        height: 24px;
+        fill: white;
+        margin-left: 10px;
+        // outline: 1px black solid;
+        background-size: contain;
+    }
+}
+.send-icon {
+    fill: white;
+    margin-left: 10px;
+}
+
